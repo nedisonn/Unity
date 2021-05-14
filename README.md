@@ -1,3 +1,5 @@
+Repositório com atividades de Testes e Confiabilidade de Sistemas. Alunos: Nédison Velloso e Yasmin Elkfury.
+
 Unity Test API
 ==============
 
