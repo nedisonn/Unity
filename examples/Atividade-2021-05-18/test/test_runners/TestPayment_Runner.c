@@ -27,8 +27,30 @@
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_sort_wichReturnVetorOrdenado1(void);
 
+extern void test_payment_ReturnSuccess1(void);
+extern void test_payment_ReturnSuccess2(void);
+extern void test_payment_ReturnSuccess3(void);
+extern void test_payment_ReturnSuccess4(void);
+extern void test_payment_ReturnSuccess5(void);
+extern void test_payment_ReturnSuccess6(void);
+extern void test_payment_ReturnSuccess7(void);
+extern void test_payment_ReturnSuccess8(void);
+extern void test_payment_ReturnFailure_Bigger(void);
+extern void test_payment_ReturnFailure_Smaller(void);
+extern void test_payment_ReturnFailure_Negative(void);
+extern void test_payment_ReturnFailure_BigDouble(void) ;
+extern void test_payment_ReturnFailure_SmallDouble(void);
+extern void test_payment_ReturnFailure_VarDouble(void);
+extern void test_payment_ReturnFailure_StringInsteadOfNum(void);
+extern void test_payment_ReturnFailure_WrongSpelling(void);
+extern void test_payment_ReturnFailure_SpecialCharacters(void);
+extern void test_payment_ReturnFailure_InputHasSpaces(void) ;
+extern void test_payment_ReturnFailure_InputMenina(void);
+extern void test_payment_ReturnFailure_InputAbelha(void);
+extern void test_payment_ReturnFailure_InputBlank(void);
+extern void test_payment_ReturnFailure_InputIsSpace(void);
+extern void test_payment_ReturnFailure_NumberInsteadOfString(void);
 
 /*=======Test Reset Option=====*/
 void resetTest(void);
@@ -43,7 +65,29 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test/TestPayment.c");
-  RUN_TEST(test_sort_wichReturnVetorOrdenado1, 14);
+  RUN_TEST(test_payment_ReturnSuccess1,11);
+  RUN_TEST(test_payment_ReturnSuccess2,14);
+  RUN_TEST(test_payment_ReturnSuccess3,17);
+  RUN_TEST(test_payment_ReturnSuccess4,20);
+  RUN_TEST(test_payment_ReturnSuccess5,23);
+  RUN_TEST(test_payment_ReturnSuccess6,26);
+  RUN_TEST(test_payment_ReturnSuccess7,29);
+  RUN_TEST(test_payment_ReturnSuccess8,32);
+  RUN_TEST(test_payment_ReturnFailure_Bigger,35);
+  RUN_TEST(test_payment_ReturnFailure_Smaller,38);
+  RUN_TEST(test_payment_ReturnFailure_Negative,41);
+  RUN_TEST(test_payment_ReturnFailure_BigDouble ,44);
+  RUN_TEST(test_payment_ReturnFailure_SmallDouble,47);
+  RUN_TEST(test_payment_ReturnFailure_VarDouble,51);
+  RUN_TEST(test_payment_ReturnFailure_StringInsteadOfNum,54);
+  RUN_TEST(test_payment_ReturnFailure_WrongSpelling,57);
+  RUN_TEST(test_payment_ReturnFailure_SpecialCharacters,60);
+  RUN_TEST(test_payment_ReturnFailure_InputHasSpaces ,63);
+  RUN_TEST(test_payment_ReturnFailure_InputMenina,66);
+  RUN_TEST(test_payment_ReturnFailure_InputAbelha,69);
+  RUN_TEST(test_payment_ReturnFailure_InputBlank,72);
+  RUN_TEST(test_payment_ReturnFailure_InputIsSpace,75);
+  RUN_TEST(test_payment_ReturnFailure_NumberInsteadOfString, 78);
 
   return (UnityEnd());
 }
